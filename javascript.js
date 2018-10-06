@@ -34,7 +34,9 @@
                 });
             });
 
+// navigation function end 
 
+// a tag hash# click function 
      
             $(function () {
                 $('a[href*=#]:not([href=#])').click(function () {

@@ -52,4 +52,24 @@
                     }
                 });
             });
-    
+    //Accordion Box
+	function accordion() {
+	    if($('.accordion-box').length){
+	        $(".accordion-box").on('click', '.accord-btn', function() {
+
+	            if($(this).hasClass('active')!==true){
+	            $('.accordion .accord-btn').removeClass('active');
+
+	            }
+
+	            if ($(this).next('.accord-content').is(':visible')){
+	                $(this).removeClass('active');
+	                $(this).next('.accord-content').slideUp(500);
+	            }else{
+	                $(this).addClass('active');
+	                $('.accordion .accord-content').slideUp(500);
+	                $(this).next('.accord-content').slideDown(500);	
+	            }
+	        });	
+	    }
+	}

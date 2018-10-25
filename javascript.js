@@ -52,6 +52,7 @@
                     }
                 });
             });
+
     //Accordion Box
 	function accordion() {
 	    if($('.accordion-box').length){
@@ -73,3 +74,4 @@
 	        });	
 	    }
 	}
+//===================
